@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OneVsOne"
+    android:background="@drawable/background1">
+
+    <TextView
+        android:id="@+id/player_1_choice_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_blue_bright"
+        android:text="Player1's Choice"
+        android:textColor="@android:color/black"
+        android:textSize="35sp" />
+
+    <ImageView
+        android:id="@+id/player_1_choice_iv"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/player_1_choice_tv"
+        android:layout_marginTop="52dp"
+        android:layout_centerHorizontal="true"
+
+        android:src="@drawable/launcher_icon_2" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/player_1_choice_iv"
+        android:layout_marginTop="60dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Rock"
+            android:textSize="30sp"
+            android:id="@+id/rock1_btn"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_below="@+id/rock1_btn"
+            android:text="Paper"
+            android:textSize="30sp"
+            android:id="@+id/paper1_btn"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/paper1_btn"
+            android:text="Scissors"
+            android:textSize="30sp"
+            android:layout_weight="1"
+            android:id="@+id/scissors1_btn"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
